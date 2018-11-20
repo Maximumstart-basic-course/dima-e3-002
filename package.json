@@ -1,0 +1,25 @@
+{
+  "name": "essential-course-repository",
+  "version": "1.0.0",
+  "description": "essential-course",
+  "main": "index.js",
+  "scripts": {
+    "eslint:lint": "eslint ./app/**/*.js",
+    "stylelint:lint": "stylelint './app/**/*.css'",
+    "test": "npm run eslint:lint & npm run stylelint:lint",
+    "eslint:fix": "eslint ./app/**/*.js --fix",
+    "stylelint:fix": "stylelint './**/*.css' --fix",
+    "all:fix": "eslint:fix && stylelint:fix"
+  },
+  "keywords": [],
+  "author": "Maximumstart",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "4.19.1",
+    "stylelint": "9.3.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "11.1.0",
+    "eslint-plugin-import": "2.12.0"
+  }
+}
